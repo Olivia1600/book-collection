@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 My Book Collection</h1>
+    <form id="book-form" class="book-form">
+      <input type="text" id="title" placeholder="Enter Book Title" required>
+      <input type="text" id="author" placeholder="Enter Author Name" required>
+      <input type="number" id="year" placeholder="Enter Publication Year" required>
+      <button type="submit">➕ Add Book</button>
+    </form>
+    <ul id="book-list" class="book-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
