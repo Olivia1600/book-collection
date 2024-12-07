@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Collection</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>📚 My Book Collection</h1>
+    <header>
+      <h1>📖  Book Collection</h1>
+      <p>Manage your favorite books effortlessly in style!</p>
+    </header>
     <form id="book-form" class="book-form">
-      <input type="text" id="title" placeholder="Enter Book Title" required>
-      <input type="text" id="author" placeholder="Enter Author Name" required>
-      <input type="number" id="year" placeholder="Enter Publication Year" required>
-      <button type="submit">➕ Add Book</button>
+      <input type="text" id="title" placeholder="Book Title" required>
+      <input type="text" id="author" placeholder="Author Name" required>
+      <input type="number" id="year" placeholder="Publication Year" required>
+      <button type="submit">Add Book</button>
     </form>
     <ul id="book-list" class="book-list"></ul>
   </div>

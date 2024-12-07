@@ -1,93 +1,108 @@
 /* style.css */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #8e44ad, #3498db);
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    background: #ffffff;
-    color: #333333;
-    max-width: 500px;
-    width: 90%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #8e44ad;
-  }
-  
-  .book-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .book-form input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .book-form button {
-    background: #8e44ad;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .book-form button:hover {
-    background: #3498db;
-  }
-  
-  .book-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .book-list li {
-    background: #f4f4f4;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .book-list li span {
-    display: block;
-  }
-  
-  .book-list button.delete {
-    background: #e74c3c;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .book-list button.delete:hover {
-    background: #c0392b;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #1e1e2f;
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin: 0;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.book-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #292929;
+  color: #f0f0f0;
+  outline: none;
+}
+
+.book-form input::placeholder {
+  color: #888;
+}
+
+.book-form button {
+  padding: 12px;
+  font-size: 16px;
+  background: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-form button:hover {
+  background: #e64a4a;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+}
+
+.book-list li {
+  background: #292929;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+}
+
+.book-list li span {
+  display: block;
+}
+
+.book-list button.delete {
+  background: #ff4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-list button.delete:hover {
+  background: #e33b3b;
+}
